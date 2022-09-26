@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RINGO Ukraina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,74 +21,76 @@
         <a href="./index.html">
             <img src="./images/logo.svg" alt="Logo of Company">
         </a>
-        <nav>
-            <ul>
+        <nav class="">
+            <ul class="nav-list">
                 <li>
-                    <a href="">Напрямки</a>
+                    <a href="" class="nav-link">Напрямки</a>
                 </li>
                 <li>
-                    <a href="">Про компанію</a>
+                    <a href="" class="nav-link">Про компанію</a>
                 </li>
                 <li>
-                    <a href="">Переваги</a>
+                    <a href="" class="nav-link">Переваги</a>
                 </li>
                 <li>
-                    <a href="">Етапи роботи</a>
+                    <a href="" class="nav-link">Етапи роботи</a>
                 </li>
             </ul>
         </nav>
         <ul>
             <li><a href="">
-                    <img src="./images/icon-instagram.svg" alt="Icon of Instagram">
+                    <img src="./images/icon-instagram.svg" alt="Icon of Instagram" width="18">
                 </a></li>
             <li><a href="">
-                    <img src="./images/icon-facebook.svg" alt="Icon of Facebook">
+                    <img src="./images/icon-facebook.svg" alt="Icon of Facebook" width="10">
                 </a></li>
         </ul>
-        <a href="tel:+380676615415">
-            <img src="./images/icon-phone.svg" alt="Icon of phone">+38067-661-54-15
+        <a href="tel:+380676615415" class="nav-link phone">
+            <img src="./images/icon-phone.svg" alt="Icon of phone" width="22">+38067-661-54-15
         </a>
     </header>
     <main>
 
-        <!-- Hero (slider) -->
-        <section>
-            <h1>ВИРОБНИЦТВО <br>МЕБЛІВ</h1>
-            <p>Ми виконуємо комплексне виготовлення корпусних меблів для житлових і комерційних приміщень, забезпечимо
+        <!-- Герой (слайдер) -->
+        <section class="hero">
+            <h1 class="hero-title">ВИРОБНИЦТВО <br>МЕБЛІВ</h1>
+            <p class="hero-text">Ми виконуємо комплексне виготовлення корпусних меблів для житлових і комерційних
+                приміщень,
+                забезпечимо
                 Вас
                 якісним меблевим продуктом власного виробництва.
             </p>
-            <button type="button">Обговорити проект</button>
+            <button type="button" class="btn hero-btn">Обговорити проект</button>
         </section>
 
-        <!-- Main directions -->
+        <!-- Основні напрямки -->
         <section>
-            <h2 id="directions">ОСНОВНІ НАПРЯМКИ</h2>
+            <h2 id="directions" class="">ОСНОВНІ НАПРЯМКИ</h2>
             <ul>
                 <li>
-                    <p>01</p>
-                    <h3>Дизайн інтерєру</h3>
+                    <p class="direction-number">01</p>
+                    <h3 class="direction-title">Дизайн інтерєру</h3>
                     <img src="./images/direction-1.jpg" alt="Дизайнерська кімната" width="354">
                 </li>
                 <li>
-                    <p>02</p>
-                    <h3>Виробництво меблів</h3>
+                    <p class="direction-number">02</p>
+                    <h3 class="direction-title">Виробництво меблів</h3>
                     <img src="./images/direction-2.jpg" alt="Майстер" width="333">
                 </li>
                 <li>
-                    <p>03</p>
-                    <h3>Комплексне меблювання</h3>
+                    <p class="direction-number">03</p>
+                    <h3 class="direction-title">Комплексне меблювання</h3>
                     <img src="./images/direction-3.jpg" alt="Кімната з меблями" width="333">
                 </li>
             </ul>
         </section>
 
-        <!-- Materials -->
+        <!-- Основні матеріали -->
         <section class="materials">
             <h2>МИ ЗАБЕЗПЕЧЕМО ВАС</h2>
             <ul>
                 <li>
-                    <img src="./images/wardrobe.svg" alt="Меблі">
+                    <img src="./images/wardrobe.svg" alt="Меблі" width="66">
                     <h3>Меблями</h3>
                 </li>
                 <li>
@@ -110,7 +116,7 @@
             </ul>
         </section>
 
-        <!-- About company -->
+        <!-- Про компанію -->
         <section>
             <h2 id="about">Про компанію</h2>
             <img src="./images/kitchen.jpg" alt="Кухня" width="160">
@@ -133,7 +139,7 @@
             <img src="./images/bedroom.jpg" alt="Спальна кімната" width="160">
         </section>
 
-        <!-- Our advantages -->
+        <!-- Наші переваги -->
         <section>
             <h2 id="advantages">НАШІ ПЕРЕВАГИ</h2>
             <ul>
@@ -170,7 +176,7 @@
             </ul>
         </section>
 
-        <!-- Form to attach the project -->
+        <!-- Форма для проекту -->
         <section>
             <h3>ОБГОВОРИМО ВАШ ПРОЕКТ?</h3>
             <p>Заповніть форму і найближчим часом ми зв'яжемося з вами!</p>
@@ -183,7 +189,7 @@
             <img src="./images/discussion.jpg" alt="Менеджер та клієнт обговорюють проект" width="800">
         </section>
 
-        <!-- Phase of work -->
+        <!-- Єтапи роботи -->
         <section>
             <h2 id="phase">ЕТАПИ РОБОТИ</h2>
             <ul>
@@ -213,13 +219,13 @@
             </ul>
         </section>
 
-        <!-- Examples of work (slider)-->
+        <!-- Приклади робіт (слайдер)-->
         <section>
             <h2 id="examples">ЗАРАЗ В РОБОТІ</h2>
 
         </section>
 
-        <!-- Gifts -->
+        <!-- Подарунки -->
         <section>
             <img src="./images/toaster.jpg" alt="Тостер">
             <img src="./images/gift.svg" alt="Значок подарунку">
@@ -232,7 +238,7 @@
             <p>Подарунок</p>
         </section>
 
-        <!-- Our partners -->
+        <!-- Наші партнери -->
         <section>
             <h2>НАШІ ПАРТНЕРИ</h2>
             <ul>
@@ -259,7 +265,7 @@
             </ul>
         </section>
 
-        <!-- Ask a Question -->
+        <!-- Форма для зв'язку з консультантом -->
         <section>
             <h2 id="question">ЗАЛИШИЛИСЯ ПИТАННЯ?</h2>
             <p>Отримай безкоштовну консультацію менеджера та прорахунок проекту</p>
@@ -285,6 +291,9 @@
                     <img src="./images/icon-facebook.svg" alt="Icon of Facebook">
                 </a></li>
         </ul>
+
+        <!-- Основні розділи сайту -->
+
         <ul>
             <li>
                 <a href="#directions">Основні напрямки</a>
@@ -309,6 +318,8 @@
             <img src="./images/icon-phone.svg" alt="Icon of phone">+38067-661-54-15
         </a>
         <button type="button">На каву з менеджером!</button>
+
+        <!-- Основні бренди комплектуючих -->
 
         <h3>Бренди комплектуючих</h3>
         <ul>
