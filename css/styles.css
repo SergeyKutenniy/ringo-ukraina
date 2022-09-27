@@ -41,6 +41,23 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .btn {
   display: inline-block;
   font-weight: 700;
@@ -89,6 +106,7 @@ ul {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
+  opacity: 0.8;
 }
 
 .hero-btn {
@@ -124,4 +142,80 @@ ul {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.29;
+}
+
+/* --------------------About company------------------- */
+
+.about {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.31;
+}
+
+/* --------------------Adventages---------------------- */
+
+.advantages-number {
+  font-size: 24px;
+  opacity: 0.3;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.advantages-title {
+  font-size: 32px;
+  line-height: 1.31;
+  font-weight: 600;
+}
+
+.advantages-descr {
+  font-size: 16px;
+  line-height: 1.38;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+/* --------------The form for project------------------ */
+
+.section-form {
+  background-color: var(--secondary-bg-color);
+  color: var(--white-text-color);
+}
+
+.form-title {
+  font-size: 16px;
+  line-height: 1.44;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.form-btn {
+  padding: 22px 105px;
+}
+.section-form {
+  text-align: center;
+}
+
+/* ---------------The phase of work------------------- */
+
+.phase-number {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  color: var(--secondary-text-color);
+  border-radius: 50%;
+  border: 1px solid var(--main-text-color);
+  padding: 18px 17px;
+}
+
+.phase-title {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.phase-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.44;
 }
