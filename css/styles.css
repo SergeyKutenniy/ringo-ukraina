@@ -45,6 +45,14 @@ img {
   display: block;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -69,6 +77,11 @@ img {
 }
 
 /* ----------------------HEADER------------------------ */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 
 .nav-list {
   font-weight: 500;
@@ -177,11 +190,12 @@ img {
 /* --------------The form for project------------------ */
 
 .section-form {
+  display: flex;
   background-color: var(--secondary-bg-color);
   color: var(--white-text-color);
 }
 
-.form-title {
+.section-after-title {
   font-size: 16px;
   line-height: 1.44;
   font-weight: 500;
@@ -218,4 +232,62 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.44;
+}
+
+/* -----------------------Gifts------------------------ */
+
+.section-gift {
+  background-color: #f3f3f3;
+}
+
+.gift-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.44;
+  color: var(--secondary-text-color);
+}
+
+.gift-btn {
+  padding: 22px 67px;
+}
+
+/* --------------------Partners ------------------------*/
+
+.partners {
+  display: flex;
+  align-items: center;
+}
+
+.partner-logo {
+  display: flex;
+  width: 285px;
+  height: 90px;
+  border: 1px solid rgb(40, 43, 34, 0.2);
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------------Footer------------------------ */
+
+.social-networks {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.footer-btn {
+  padding: 22px 47px;
+}
+
+.footer-partner-title {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+  color: var(--secondary-text-color);
+}
+
+.footer-partner-logo {
+  display: flex;
+  align-items: center;
 }
