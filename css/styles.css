@@ -78,6 +78,11 @@ img {
 
 /* ----------------------HEADER------------------------ */
 
+.logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -87,6 +92,29 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
+
+  margin-left: 143px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.networks {
+  display: flex;
+  align-items: center;
+  margin-left: 149px;
+  padding-top: 35px;
+  padding-bottom: 34px;
+}
+
+.networks-item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.nav-link {
+  padding-top: 39px;
+  padding-bottom: 38px;
 }
 
 .nav-link:hover,
@@ -94,7 +122,14 @@ img {
   color: var(--accent-color);
 }
 
+.icon-instagram:hover,
+.icon-instagram:focus {
+  fill: var(--main-text-color);
+}
+
 .phone {
+  display: flex;
+  margin-left: auto;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -106,6 +141,14 @@ img {
 
 .hero {
   text-align: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.85)),
+    url(/images/hero-banner.jpg);
+  max-width: 1600px;
+  height: 687px;
+  padding-top: 120px;
+  padding-bottom: 222px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -113,13 +156,20 @@ img {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.2;
+  color: var(--white-text-color);
+  margin-bottom: 20px;
 }
 
 .hero-text {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
+  color: var(--white-text-color);
+  margin-left: auto;
+  margin-right: auto;
   opacity: 0.8;
+  margin-bottom: 50px;
+  width: 537px;
 }
 
 .hero-btn {
@@ -128,11 +178,37 @@ img {
 
 /* -------------------Directions----------------------- */
 
+.directions {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.directions-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.directions-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.directions-item {
+  border-left: 1px solid rgba(40, 43, 34, 0.2);
+  /* padding-left: 30px; */
+  /* padding-right: 30px; */
+}
+
+.directions-item:last-child {
+  border-right: 1px solid rgba(40, 43, 34, 0.2);
+}
+
 .direction-number {
   font-size: 24px;
   opacity: 0.5;
   line-height: 1;
   font-weight: 600;
+  margin-bottom: 60px;
 }
 
 .direction-title {
@@ -141,6 +217,7 @@ img {
   font-weight: 600;
   line-height: 1;
   font-weight: 600;
+  margin-bottom: 30px;
 }
 
 /* --------------------Materials--------------------- */
