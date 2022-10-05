@@ -45,8 +45,12 @@ img {
   display: block;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
-  width: 1200px;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -222,9 +226,19 @@ img {
 
 /* --------------------Materials--------------------- */
 
+.container-materials {
+  width: 1023px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .materials {
   background-color: var(--secondary-bg-color);
   color: var(--white-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .materials h3 {
@@ -234,21 +248,138 @@ img {
   line-height: 1.29;
 }
 
+.materials-title {
+  text-align: center;
+}
+
+.materials-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.materials-item {
+  flex-basis: calc(100% / 3 - 30px);
+  text-align: center;
+}
+
+.materials-item > img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+
+.materials-item > h3 {
+  margin-top: 30px;
+}
+
 /* --------------------About company------------------- */
 
 .about {
+  padding-top: 141px;
+  padding-bottom: 141px;
+}
+
+.container-about {
+  width: 1390px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-title {
+  /* display: flex; */
+}
+
+.about-list {
+  display: flex;
+  justify-content: center;
+}
+
+.about-item {
+  display: flex;
+  border: 1px solid rgba(40, 43, 34, 0.2);
+  padding: 35px 60px;
+}
+
+.about-caption {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.31;
+  margin-bottom: 80px;
+  width: 814px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--main-text-color);
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+  /* margin-bottom: 50px; */
+  width: 370px;
+  margin-left: 15px;
 }
 
 /* --------------------Adventages---------------------- */
+
+.advantages {
+  padding-bottom: 140px;
+}
+
+.advantages-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.advantages-sub-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.31;
+  margin-bottom: 10px;
+}
+
+.advantages-item:hover {
+  color: var(--accent-color);
+}
+
+.advantages-item {
+  display: flex;
+  align-items: center;
+}
+
+.advantages-descr {
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  border-top: 1px solid rgba(40, 43, 34, 0.2);
+  border-left: 1px solid rgba(40, 43, 34, 0.2);
+  border-bottom: 1px solid rgba(40, 43, 34, 0.2);
+  width: 100%;
+}
 
 .advantages-number {
   font-size: 24px;
   opacity: 0.3;
   line-height: 1;
   font-weight: 600;
+  margin-right: 116px;
+}
+
+.advantages-item img {
+  margin-right: 116px;
+  opacity: 0;
+}
+
+.advantages-item img:hover {
+  opacity: 1;
 }
 
 .advantages-title {
@@ -266,10 +397,51 @@ img {
 
 /* --------------The form for project------------------ */
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  padding-left: 200px;
+  padding-top: 100px;
+  padding-right: 187px;
+  padding-bottom: 100px;
+  text-align: start;
+}
+
+.form-input {
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  background-color: transparent;
+  opacity: 0.5;
+  color: var(--white-text-color);
+  margin-bottom: 25px;
+}
+
+.container-form {
+  width: 1630px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.form-download {
+  color: var(--white-text-color);
+  opacity: 0.5;
+  margin-bottom: 40px;
+}
+
 .section-form {
   display: flex;
   background-color: var(--secondary-bg-color);
   color: var(--white-text-color);
+}
+
+.section-form-title {
+  margin-bottom: 20px;
 }
 
 .section-after-title {
@@ -277,16 +449,40 @@ img {
   line-height: 1.44;
   font-weight: 500;
   opacity: 0.8;
+  width: 306px;
+  margin-bottom: 40px;
 }
 
 .form-btn {
+  width: 300px;
   padding: 22px 105px;
+  margin-bottom: 25px;
 }
 .section-form {
   text-align: center;
 }
 
 /* ---------------The phase of work------------------- */
+
+.section-phase {
+  padding: 140px 0;
+}
+
+.phase {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.phase-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 97px;
+  border-bottom: 1px solid rgba(40, 43, 34, 0.2);
+}
+
+.phase-item {
+  width: 240px;
+}
 
 .phase-number {
   display: inline-block;
@@ -295,20 +491,29 @@ img {
   font-weight: 600;
   color: var(--secondary-text-color);
   border-radius: 50%;
-  border: 1px solid var(--main-text-color);
+  border: 1px solid rgba(40, 43, 34, 0.3);
   padding: 18px 17px;
+  margin-bottom: 35px;
 }
 
 .phase-title {
   font-size: 18px;
   line-height: 1;
   font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .phase-text {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.44;
+  opacity: 0.8;
+}
+
+/* -------------------Examples -------------------------*/
+
+.examples {
+  text-align: center;
 }
 
 /* -----------------------Gifts------------------------ */
