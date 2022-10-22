@@ -106,17 +106,27 @@ button {
 
 .networks {
   display: flex;
-  align-items: center;
   margin-left: 149px;
+}
+
+.networks-link-inst {
+  display: block;
   padding-top: 35px;
   padding-bottom: 34px;
 }
 
-.networks-item:not(:last-child) {
-  margin-right: 18px;
+.networks-link-fcb {
+  display: block;
+  padding-top: 35px;
+  padding-bottom: 37px;
+}
+
+.networks-item:last-child {
+  margin-left: 18px;
 }
 
 .nav-link {
+  display: block;
   padding-top: 39px;
   padding-bottom: 38px;
 }
@@ -131,14 +141,26 @@ button {
   fill: var(--main-text-color);
 }
 
-.phone {
+.icon-phone {
+  margin-right: 12px;
+}
+
+.phone-link {
   display: flex;
+  align-items: center;
   margin-left: auto;
+  padding-top: 37px;
+  padding-bottom: 36px;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1;
   color: var(--secondary-text-color);
+}
+
+.phone-link:hover,
+.phone-link:focus {
+  color: var(--accent-color);
 }
 
 /* -----------------------HERO------------------------- */
@@ -199,8 +221,8 @@ button {
 
 .directions-item {
   border-left: 1px solid rgba(40, 43, 34, 0.2);
-  /* padding-left: 30px; */
-  /* padding-right: 30px; */
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .directions-item:last-child {
@@ -226,14 +248,6 @@ button {
 
 /* --------------------Materials--------------------- */
 
-.container-materials {
-  width: 1023px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .materials {
   background-color: var(--secondary-bg-color);
   color: var(--white-text-color);
@@ -250,23 +264,26 @@ button {
 
 .materials-title {
   text-align: center;
+  margin-bottom: 70px;
 }
 
 .materials-list {
   display: flex;
+  align-items: baseline;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: -70px;
 }
 
 .materials-item {
   flex-basis: calc(100% / 3 - 30px);
   text-align: center;
+  margin-bottom: 70px;
 }
 
 .materials-item > img {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 70px;
 }
 
 .materials-item > h3 {
