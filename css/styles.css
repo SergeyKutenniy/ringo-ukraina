@@ -72,13 +72,15 @@ button {
 }
 
 .btn {
-  display: inline-block;
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1;
   color: var(--white-text-color);
   background-color: var(--accent-color);
   border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ----------------------HEADER------------------------ */
@@ -572,14 +574,56 @@ form {
 
 /* -----------------------Gifts------------------------ */
 
-.section-gift {
+.gifts {
+  display: flex;
+  padding: 100px 150px;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 1px solid rgba(40, 43, 34, 0.2);
+  border-right: 1px solid rgba(40, 43, 34, 0.2);
+}
+
+.gifts-descr {
+  width: 355px;
+  text-align: center;
+}
+
+.gifts-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.35;
+  opacity: 0.8;
+}
+
+.gifts-descr-title {
+  margin-bottom: 23px;
+}
+
+.section-gifts {
   background-color: #f3f3f3;
 }
 
-.gift-text {
+.gifts-text {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.44;
+  color: var(--secondary-text-color);
+  margin-bottom: 40px;
+}
+
+.gifts-icon {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 20px;
+}
+
+.gifts-icon-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.45;
+  text-align: center;
+  margin-left: 10px;
   color: var(--secondary-text-color);
 }
 
@@ -590,8 +634,22 @@ form {
 /* --------------------Partners ------------------------*/
 
 .partners {
+  padding: 140px 0;
+}
+
+.partners-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.partners-list {
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
+}
+
+.partners-item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .partner-logo {
@@ -603,7 +661,92 @@ form {
   justify-content: center;
 }
 
+.swipe-list {
+  display: flex;
+  justify-content: center;
+}
+
+.swipe-list > li:first-child {
+  margin-right: 20px;
+}
+
+.partners-swipe {
+  width: 55px;
+  height: 55px;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
 /* ---------------------Footer------------------------ */
+
+.footer-logo {
+  display: block;
+  margin-bottom: 27px;
+}
+
+.footer-networks-item:not(:last-child) {
+  margin-right: 7px;
+}
+
+.footer-nav {
+  padding: 104px 0;
+  border-bottom: 1px solid rgba(40, 43, 34, 0.2);
+}
+
+.footer-nav > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-networks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-networks-list {
+  display: flex;
+}
+
+.footer-nav-block {
+  display: flex;
+}
+
+.footer-nav-list:not(:last-child) {
+  margin-right: 86px;
+}
+
+.footer-nav-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.footer-nav-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.footer-contact {
+  display: block;
+}
+
+.footer-tel {
+  display: flex;
+  align-items: center;
+  font-family: 'Lato';
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 30px;
+}
+
+.footer-icon-tel {
+  margin-right: 7px;
+}
 
 .social-networks {
   font-size: 14px;
@@ -616,14 +759,33 @@ form {
   padding: 22px 47px;
 }
 
-.footer-partner-title {
+/* ----------------------brands----------------------- */
+
+.footer-partners-title {
   font-size: 18px;
   line-height: 1;
   font-weight: 600;
   color: var(--secondary-text-color);
 }
 
-.footer-partner-logo {
+.footer-partners-list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 38px 0;
+  border-bottom: 1px solid rgba(40, 43, 34, 0.2);
+}
+
+.brands {
+  padding: 40px 0;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+  opacity: 0.5;
+  padding: 16px 0;
 }
