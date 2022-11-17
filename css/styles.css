@@ -1,6 +1,6 @@
 :root {
   --main-text-color: #282b22;
-  --secondary-text-color: #3d4a39;
+  --secondary-text-color: rgb(61, 74, 57);
   --white-text-color: #ffffff;
 
   --main-bg-color: #ffffff;
@@ -81,6 +81,7 @@ button {
   border: none;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -121,6 +122,7 @@ button {
 .networks-link {
   display: flex;
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .networks-link:hover,
@@ -131,11 +133,13 @@ button {
 .icon-fcb {
   padding-top: 35px;
   padding-bottom: 37px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-inst {
   padding-top: 35px;
   padding-bottom: 34px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .networks-item:last-child {
@@ -146,6 +150,7 @@ button {
   display: block;
   padding-top: 39px;
   padding-bottom: 38px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -160,6 +165,7 @@ button {
 
 .icon-phone {
   margin-right: 7px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone-link {
@@ -171,12 +177,13 @@ button {
   line-height: 1;
   color: var(--secondary-text-color);
   fill: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel {
   margin-left: auto;
-  padding-top: 37px;
-  padding-bottom: 36px;
+  padding-top: 36px;
+  padding-bottom: 35px;
 }
 
 .phone-link:hover,
@@ -411,6 +418,7 @@ button {
   padding-top: 50px;
   position: relative;
   border-top: 1px solid rgba(40, 43, 34, 0.2);
+  transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advantages-item:last-child {
@@ -433,7 +441,8 @@ button {
   line-height: 1;
   font-weight: 600;
   width: 50%;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
+  transition: all 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advantages-item:hover {
@@ -442,16 +451,17 @@ button {
 
 .advantages-item img {
   opacity: 0;
-  visibility: visible;
   position: absolute;
   left: 143px;
   top: -33px;
   z-index: 1;
+  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advantages-item:hover img,
-.advantages-item:hover .advantages-number {
+.advantages-item:hover > .advantages-number {
   opacity: 1;
+  color: var(--accent-color);
 }
 
 .advantages-text {
@@ -726,6 +736,7 @@ form {
   border: 1px solid var(--secondary-text-color);
   border-radius: 50%;
   background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partners-swipe:hover,
@@ -740,6 +751,7 @@ form {
 
 .partners-swipe-arrow {
   fill: var(--secondary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------------------Footer------------------------ */
@@ -751,6 +763,10 @@ form {
 
 .footer-networks-item:not(:last-child) {
   margin-right: 7px;
+}
+
+.footer-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-nav {
