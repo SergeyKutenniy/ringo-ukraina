@@ -259,7 +259,7 @@ button {
 .hero {
   text-align: center;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.85)),
-    url(/images/hero-banner.jpg);
+    url(/images/hero-banner-1.jpg);
   max-width: 1600px;
   height: 687px;
   padding-top: 120px;
