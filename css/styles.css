@@ -11,6 +11,11 @@
 body {
   font-family: 'Raleway', sans-serif;
   color: var(--main-text-color);
+  margin: 0;
+}
+
+figure {
+  margin: 0;
 }
 
 h1,
@@ -48,6 +53,48 @@ img {
 
 button {
   cursor: pointer;
+}
+
+@keyframes slidy {
+  0% {
+    left: -100%;
+  }
+  33% {
+    left: -200%;
+  }
+
+  66% {
+    left: -300%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+.captioned-gallery {
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../images/hero-banner-1.jpg), url(../images/hero-banner-2.jpg),
+    url(../images/hero-banner-3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: 20000ms 2000ms slidy cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.slider {
+  position: relative;
+  width: 500%;
+}
+.slider figure {
+  width: 20%;
+  height: auto;
+  display: block;
+  position: inherit;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -258,8 +305,8 @@ button {
 
 .hero {
   text-align: center;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.85)),
-    url(/images/hero-banner-1.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.85));
+  /* url(/images/hero-banner-1.jpg); */
   max-width: 1600px;
   height: 687px;
   padding-top: 120px;
