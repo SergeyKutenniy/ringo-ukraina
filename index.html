@@ -72,10 +72,7 @@
         <section class="hero">
             <h1 class="hero-title">ВИРОБНИЦТВО <br>МЕБЛІВ</h1>
             <p class="hero-text">Ми виконуємо комплексне виготовлення корпусних меблів для житлових і комерційних
-                приміщень,
-                забезпечимо
-                Вас
-                якісним меблевим продуктом власного виробництва.
+                приміщень, забезпечимо Bас якісним меблевим продуктом власного виробництва.
             </p>
             <button type="button" class="btn hero-btn" data-modal-open>Обговорити проект</button>
             <div class="captioned-gallery">
@@ -215,7 +212,7 @@
                 <ul>
                     <li class="advantages-item">
                         <p class="advantages-number">01</p>
-                        <img src="./images/mobility.jpg" alt="Чоловіки обговорюють проект" width="340">
+                        <img src="./images/mobility.jpg" alt="Чоловіки обговорюють проект">
                         <div class="advantages-descr">
                             <h3 class="advantages-sub-title">Мобільність</h3>
                             <p class="advantages-text">Проводимо зустрічі на об`єктах в затишних закладах Києва</p>
@@ -270,26 +267,29 @@
                 <div class="form">
                     <h2 class="section-form-title">ОБГОВОРИМО <br>ВАШ ПРОЕКТ?</h2>
                     <p class="section-after-title">Заповніть форму і найближчим часом ми зв'яжемося з вами!</p>
-                    <form action="">
-                        <label for="">
-                            <input type="text" class="form-input" placeholder="Ім'я" name="user-name" minlength="2"
-                                pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы и латиницы"
-                                required="">
-                        </label>
-                        <label for="">
-                            <input type="tel" class="form-input" placeholder="Номер телефону" name="user-tel"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-000-00-00" required="">
-                        </label>
+                    <form class="js-speaker-form">
+                        <label for="name"></label>
+                        <input type="text" class="form-input" placeholder="Ім'я" name="user-name" minlength="2"
+                            pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы и латиницы"
+                            id="name">
 
-                        <label for="file" class="">Прикріпити проект
-                            <input type="file" class="form-download">
-                        </label>
+                        <label for="tel"></label>
+                        <input type="tel" class="form-input" placeholder="Номер телефону" name="user-tel"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-000-00-00" id="tel">
 
-                        <button type="button" class="btn form-btn">Відправити</button>
-                        <label class="form-checkbox-label" for="accept-policy"><input type="checkbox">Даю згоду на
-                            оброблення персональних
-                            даних
-                        </label>
+                        <div class="download-form">
+                            <input type="file" id="file">
+                            <label for="file" class="form-download">Прикріпити проект</label>
+                        </div>
+
+                        <button type="submit" class="btn form-btn">Відправити</button>
+
+                        <div class="policy">
+                            <input type="checkbox" id="accept-policy">
+                            <label class="checkbox-label" for="accept-policy">Даю згоду на
+                                оброблення персональних
+                                даних</label>
+                        </div>
 
                     </form>
                 </div>
@@ -429,14 +429,29 @@
         <!-- Форма для зв'язку з консультантом -->
         <section class="section-form">
             <div class="container-form">
-                <div>
+                <div class="form">
                     <h2 id="question">ЗАЛИШИЛИСЯ ПИТАННЯ?</h2>
                     <p class="section-after-title">Отримай безкоштовну консультацію менеджера та прорахунок проекту</p>
-                    <form action="">
-                        <label for=""></label>
-                        <label for=""></label>
-                        <button type="button" class="btn form-btn">Відправити</button>
-                        <label for=""></label>
+                    <form class="js-speaker-form">
+                        <label for="name"></label>
+                        <input type="text" class="form-input" placeholder="Ім'я" name="user-name" minlength="2"
+                            pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы и латиницы"
+                            id="name" autocomplete="off">
+
+                        <label for="tel"></label>
+                        <input type="tel" class="form-input" placeholder="Номер телефону" name="user-tel"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-000-00-00" id="tel"
+                            autocomplete="off">
+
+                        <button type="submit" class="btn form-btn">Відправити</button>
+
+                        <div class="policy">
+                            <input type="checkbox" id="accept-policy">
+                            <label class="checkbox-label" for="accept-policy">Даю згоду на
+                                оброблення персональних
+                                даних</label>
+                        </div>
+
                     </form>
                 </div>
                 <img src="./images/manager.jpg" alt="Дівчина-менеджер за компьютером" width="800">
@@ -573,7 +588,7 @@
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
-            <form action="" class="modal-form">
+            <form action="" class="modal-form js-speaker-form">
                 <label for="">
                     <input type="text" class="form-input" placeholder="Ім'я" name="user-name" minlength="2"
                         pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы и латиницы"
@@ -597,6 +612,21 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script>
+        (() => {
+            document
+                .querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+
+                    e.currentTarget.reset();
+                });
+        })();
+    </script>
 </body>
 
 </html>
