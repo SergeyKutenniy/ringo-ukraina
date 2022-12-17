@@ -267,26 +267,29 @@
                 <div class="form">
                     <h2 class="section-form-title">ОБГОВОРИМО <br>ВАШ ПРОЕКТ?</h2>
                     <p class="section-after-title">Заповніть форму і найближчим часом ми зв'яжемося з вами!</p>
+
                     <form class="js-speaker-form">
-                        <label for="name"></label>
-                        <input type="text" class="form-input" placeholder="Ім'я" name="user-name" minlength="2"
-                            pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы и латиницы"
-                            id="name">
+                        <label>
+                            <input type="text" class="form-input" placeholder="Ім'я" name="user-name" minlength="2"
+                                pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Ім'я має містити символи кирилиці або латиниці"
+                                required>
+                        </label>
 
-                        <label for="tel"></label>
-                        <input type="tel" class="form-input" placeholder="Номер телефону" name="user-tel"
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-000-00-00" id="tel">
+                        <label>
+                            <input type="tel" class="form-input" placeholder="Номер телефону" name="user-tel"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-000-00-00" required>
+                        </label>
 
-                        <div class="download-form">
-                            <input type="file" id="file">
-                            <label for="file" class="form-download">Прикріпити проект</label>
+                        <div class="form-download">
+                            <input type="file" id="file" class="form-download-input visually-hidden" required>
+                            <label for="file" class="form-download-label">Прикріпити проект</label>
                         </div>
 
                         <button type="submit" class="btn form-btn">Відправити</button>
 
                         <div class="policy">
-                            <input type="checkbox" id="accept-policy">
-                            <label class="checkbox-label" for="accept-policy">Даю згоду на
+                            <input type="checkbox" id="accept-policy" class="policy-checkbox visually-hidden" required>
+                            <label class="policy-label" for="accept-policy">Даю згоду на
                                 оброблення персональних
                                 даних</label>
                         </div>
