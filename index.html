@@ -266,9 +266,11 @@
             <div class="container-form">
                 <div class="form">
                     <h2 class="section-form-title">ОБГОВОРИМО <br>ВАШ ПРОЕКТ?</h2>
-                    <p class="section-after-title">Заповніть форму і найближчим часом ми зв'яжемося з вами!</p>
 
-                    <form class="js-speaker-form">
+                    <form class="js-speaker-form form-project">
+
+                        <p class="section-after-title">Заповніть форму і найближчим часом ми зв'яжемося з вами!</p>
+
                         <label>
                             <input type="text" class="form-input" placeholder="Ім'я" name="user-name" minlength="2"
                                 pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Ім'я має містити символи кирилиці або латиниці"
@@ -277,11 +279,11 @@
 
                         <label>
                             <input type="tel" class="form-input" placeholder="Номер телефону" name="user-tel"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-000-00-00" required>
+                                pattern="[0-9]{10}" title="0501234567" required>
                         </label>
 
                         <div class="form-download">
-                            <input type="file" id="file" class="form-download-input visually-hidden" required>
+                            <input type="file" id="file" class="form-download-input visually-hidden">
                             <label for="file" class="form-download-label">Прикріпити проект</label>
                         </div>
 
@@ -433,24 +435,30 @@
         <section class="section-form">
             <div class="container-form">
                 <div class="form">
-                    <h2 id="question">ЗАЛИШИЛИСЯ ПИТАННЯ?</h2>
-                    <p class="section-after-title">Отримай безкоштовну консультацію менеджера та прорахунок проекту</p>
-                    <form class="js-speaker-form">
-                        <label for="name"></label>
-                        <input type="text" class="form-input" placeholder="Ім'я" name="user-name" minlength="2"
-                            pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы и латиницы"
-                            id="name" autocomplete="off">
+                    <h2 id="question" class="question">ЗАЛИШИЛИСЯ ПИТАННЯ?</h2>
 
-                        <label for="tel"></label>
-                        <input type="tel" class="form-input" placeholder="Номер телефону" name="user-tel"
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-000-00-00" id="tel"
-                            autocomplete="off">
+                    <form class="js-speaker-form form-project">
+
+                        <p class="section-after-title">Отримай безкоштовну консультацію менеджера та прорахунок проекту
+                        </p>
+
+                        <label>
+                            <input type="text" class="form-input" placeholder="Ім'я" name="user-name" minlength="2"
+                                pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы и латиницы"
+                                required>
+                        </label>
+
+                        <label>
+                            <input type="tel" class="form-input question-tel" placeholder="Номер телефону"
+                                name="user-tel" pattern="[0-9]{10}" title="0501234567" required>
+                        </label>
 
                         <button type="submit" class="btn form-btn">Відправити</button>
 
                         <div class="policy">
-                            <input type="checkbox" id="accept-policy">
-                            <label class="checkbox-label" for="accept-policy">Даю згоду на
+                            <input type="checkbox" id="question-accept-policy" class="policy-checkbox visually-hidden"
+                                required>
+                            <label class="policy-label" for="question-accept-policy">Даю згоду на
                                 оброблення персональних
                                 даних</label>
                         </div>
@@ -587,49 +595,46 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
-                <svg width="20" height="20" class="icon-close">
-                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                <svg width="35" height="35" class="icon-close">
+                    <use href="./images/symbol-defs.svg#icon-modal-close"></use>
                 </svg>
             </button>
-            <form action="" class="modal-form js-speaker-form">
-                <label for="">
+
+            <p class="modal-form-head-first">Хочете стати нашим партнером?</p>
+
+            <form class="modal-form js-speaker-form">
+
+                <p class="modal-form-head-second">Заповніть форму, і ми звяжемося та обговоримо з вами усі деталі</p>
+
+                <label>
                     <input type="text" class="form-input" placeholder="Ім'я" name="user-name" minlength="2"
-                        pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы и латиницы"
-                        required="">
-                </label>
-                <label for="">
-                    <input type="tel" class="form-input" placeholder="Номер телефону" name="user-tel"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-000-00-00" required="">
+                        pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы и латиницы" required>
                 </label>
 
-                <label for="file" class="">Прикріпити проект
-                    <input type="file" class="form-download">
+                <label>
+                    <input type="tel" class="form-input question-tel" placeholder="Номер телефону" name="user-tel"
+                        pattern="[0-9]{10}" title="0501234567" required>
                 </label>
 
-                <button type="button" class="btn form-btn">Відправити</button>
-                <label class="form-checkbox-label" for="accept-policy"><input type="checkbox">Даю згоду на
-                    оброблення персональних
-                    даних
-                </label>
+                <textarea class="modal-form-comments" name="comments" id="" rows="4"
+                    placeholder="Коротко про себе"></textarea>
+
+                <button type="submit" class="btn form-btn">Відправити</button>
+
+                <div class="policy">
+                    <input type="checkbox" id="modal-accept-policy" class="policy-checkbox visually-hidden" required>
+                    <label class="policy-label" for="modal-accept-policy">Даю згоду на
+                        оброблення персональних
+                        даних</label>
+                </div>
+
             </form>
         </div>
     </div>
+
     <script src="./js/modal.js"></script>
-    <script>
-        (() => {
-            document
-                .querySelector('.js-speaker-form')
-                .addEventListener('submit', e => {
-                    e.preventDefault();
+    <script src="./js/console.js"></script>
 
-                    new FormData(e.currentTarget).forEach((value, name) =>
-                        console.log(`${name}: ${value}`),
-                    );
-
-                    e.currentTarget.reset();
-                });
-        })();
-    </script>
 </body>
 
 </html>
