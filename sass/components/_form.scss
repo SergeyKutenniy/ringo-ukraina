@@ -25,10 +25,10 @@
   font-size: 16px;
   line-height: 1.45;
   outline: none;
-}
 
-.form-input:invalid {
-  color: #e11616;
+  &:invalid {
+    color: #e11616;
+  }
 }
 
 .container-form {
@@ -55,17 +55,17 @@
   display: inline-flex;
   align-items: center;
   cursor: pointer;
-}
 
-.form-download-label::before {
-  content: '';
-  background-image: url(../images/icon-download.svg);
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  fill: var(--white-text-color);
-  cursor: pointer;
-  margin-right: 10px;
+  &::before {
+    content: '';
+    background-image: url(../images/icon-download.svg);
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    fill: var(--white-text-color);
+    cursor: pointer;
+    margin-right: 10px;
+  }
 }
 
 .form-download-input:focus + .form-download-label::before {
@@ -106,15 +106,15 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.3;
-}
 
-.policy-label::before {
-  content: '';
-  width: 15px;
-  height: 15px;
-  display: block;
-  border: 2px solid var(--white-text-color);
-  margin-right: 10px;
+  &::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: block;
+    border: 2px solid var(--white-text-color);
+    margin-right: 10px;
+  }
 }
 
 .policy-checkbox:checked + .policy-label:before {

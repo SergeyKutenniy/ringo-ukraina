@@ -21,14 +21,14 @@
   right: -50px;
   opacity: 50%;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.close-btn:hover {
-  border-color: var(--accent-color);
-}
+  &:hover {
+    border-color: var(--accent-color);
 
-.close-btn:hover .icon-close {
-  fill: var(--accent-color);
+    .icon-close {
+      fill: var(--accent-color);
+    }
+  }
 }
 
 .icon-close {
@@ -69,14 +69,4 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 40px;
   color: var(--white-text-color);
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: var(--white-text-color);
-  opacity: 0.5;
-}
-
-textarea {
-  outline: none;
 }

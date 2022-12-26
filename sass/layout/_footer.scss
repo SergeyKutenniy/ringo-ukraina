@@ -3,20 +3,24 @@
   margin-bottom: 27px;
 }
 
-.footer-networks-item:not(:last-child) {
+.footer-networks-item {
   margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .footer-link {
   display: inline-block;
   transform: scaleX(1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-color);
-  transform: scale(1.2);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transform: scale(1.2);
+  }
 }
 
 .footer-nav {
@@ -43,18 +47,22 @@
   display: flex;
 }
 
-.footer-nav-list:not(:last-child) {
+.footer-nav-list {
   margin-right: 86px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .footer-nav-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
-}
 
-.footer-nav-item:not(:last-child) {
-  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .footer-contact {
@@ -70,6 +78,11 @@
 
 .footer-tel {
   margin-bottom: 31px;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-btn {
@@ -93,15 +106,10 @@
 .footer-partners-item {
   display: flex;
   margin-right: 38px;
-}
 
-.footer-partners-item:last-child {
-  margin-right: 0;
-}
-
-.footer-tel:hover,
-.footer-tel:focus {
-  color: var(--accent-color);
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .brands {

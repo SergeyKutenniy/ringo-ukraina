@@ -30,10 +30,15 @@
   position: relative;
   border-top: 1px solid rgba(40, 43, 34, 0.2);
   transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.advantages-item:last-child {
-  border-bottom: 1px solid rgba(40, 43, 34, 0.2);
+  &:last-child {
+    border-bottom: 1px solid rgba(40, 43, 34, 0.2);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .advantages-descr {
@@ -55,11 +60,6 @@
   width: 50%;
   color: rgba(0, 0, 0, 0.3);
   transition: all 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.advantages-item:hover,
-.advantages-item:focus {
-  color: var(--accent-color);
 }
 
 .advantages-item img {

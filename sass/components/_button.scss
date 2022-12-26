@@ -10,11 +10,11 @@
   margin-right: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.btn:hover,
-.btn:focus {
-  background-color: #cc9654;
-  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
+  &:hover,
+  &:focus {
+    background-color: #cc9654;
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
 }

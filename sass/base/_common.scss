@@ -48,3 +48,13 @@ button {
 input[type='checkbox'] {
   margin: 0;
 }
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--white-text-color);
+  opacity: 0.5;
+}
+
+textarea {
+  outline: none;
+}
