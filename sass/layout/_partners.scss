@@ -1,0 +1,109 @@
+.partners {
+  padding: 140px 0;
+}
+
+.partners-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.partners-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.partners-item {
+  display: flex;
+  width: 285px;
+  height: 90px;
+  border: 1px solid rgba(40, 43, 34, 0.2);
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.partners-logo {
+  margin-right: 0;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  opacity: 0.3;
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.partners-item:hover .icon,
+.icon:focus,
+.footer-partners-item:hover .icon {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.partners-item > .franke {
+  width: 152px;
+  height: 48px;
+}
+
+.partners-item > .hafele {
+  width: 180px;
+  height: 72px;
+}
+
+.partners-item > .artzerkalo {
+  width: 156px;
+  height: 45px;
+}
+
+.partners-item > .emir {
+  width: 135px;
+  height: 47px;
+}
+
+.swipe-list {
+  display: flex;
+  justify-content: center;
+}
+
+.swipe-list > li:first-child {
+  margin-right: 20px;
+}
+
+.partners-swipe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 50%;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.partners-swipe:hover,
+.partners-swipe:focus {
+  border-color: var(--accent-color);
+}
+
+.partners-swipe:hover .partners-swipe-arrow,
+.partners-swipe:focus .partners-swipe-arrow {
+  fill: var(--accent-color);
+}
+
+.partners-swipe-arrow {
+  fill: var(--secondary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.question {
+  width: 373px;
+  margin-bottom: 20px;
+}
+
+.question-tel {
+  margin-bottom: 40px;
+}
