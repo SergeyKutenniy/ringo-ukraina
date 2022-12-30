@@ -21,6 +21,10 @@
   margin: -1px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   color: var(--main-text-color);
